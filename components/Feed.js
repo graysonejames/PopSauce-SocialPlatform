@@ -1,4 +1,5 @@
 import Stories from "./Stories";
+import Posts from "./Posts";
 
 import React from "react";
 import Image from "next/image";
@@ -19,6 +20,8 @@ function Feed() {
                 {/*Stories */}
                 <Stories />
                 {/*Posts */}
+                <Posts />
+                <Posts />
             </section>
         </main>
     );

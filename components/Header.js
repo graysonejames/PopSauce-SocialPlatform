@@ -57,7 +57,7 @@ function Header() {
                     <HeartIcon className="navBtn" />
                     <img
                         className=" h-10 rounded-full cursor-pointer"
-                        src="https://media.licdn.com/dms/image/C5603AQFQ9muzujqwEg/profile-displayphoto-shrink_800_800/0/1587445356674?e=1680739200&v=beta&t=CGKy4iKMHE9G0SCMK4iiX95z_6dsMvvC-_LNrBxhI-A"
+                        src="https://media.licdn.com/dms/image/C5603AQFQ9muzujqwEg/profile-displayphoto-shrink_200_200/0/1587445356674?e=1680739200&v=beta&t=7KpgCy6EytJrtaaWA9Kea2vbfSSyNMe2Z3FpcrHS-4Q"
                         alt="profilepic"
                     />
                 </div>
