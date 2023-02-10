@@ -12,6 +12,7 @@ function Suggestions() {
             avatar: faker.image.avatar(),
             // password: faker.internet.password(),
             birthdate: faker.date.birthdate(),
+            company: faker.company.name(),
             registeredAt: faker.date.past(),
         }));
         setSuggestions(suggestions);
@@ -40,12 +41,12 @@ function Suggestions() {
                         src={profile.avatar}
                         alt=""
                     />
-                    <div>
+                    <div className="flex-1 ml-4">
                         <h2 className="font-semibold text-sm">
                             {profile.username}
                         </h2>
                         <h3 className="text-xs text-gray-400">
-                            Contact me {profile.email}
+                            I work at {profile.company}
                         </h3>
                     </div>
                     <button className="font-bold text-xs text-blue-400">
