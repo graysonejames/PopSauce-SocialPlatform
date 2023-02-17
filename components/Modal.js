@@ -11,10 +11,10 @@ function Modal() {
     const [selectedFile, setSelectedFile] = useState(null);
 
     const uploadPost = async () => {
-        if(loading) return;
+        if (loading) return;
 
         setLoading(true);
-    }
+    };
 
     const addImageToPost = (e) => {
         const reader = new FileReader();
