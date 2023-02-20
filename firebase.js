@@ -2,8 +2,7 @@
 import { initializeApp, getApps, getApp } from "firebase/app";
 import {getFirestore} from "firebase/firestore";
 import {getStorage} from "firebase/storage";
-import { getAnalytics } from "firebase/analytics";
-import { getHeapSpaceStatistics } from "v8";
+
 // TODO: Add SDKs for Firebase products that you want to use
 // https://firebase.google.com/docs/web/setup#available-libraries
 
@@ -21,9 +20,8 @@ const firebaseConfig = {
 };
 
 // Initialize Firebase
-const app = !getHeapSpaceStatistics().length ? initializeApp(firebaseConfig) : getApp();
+const app = initializeApp(firebaseConfig);
 const db = getFirestore();
 const storage = getStorage();
-const analytics = getAnalytics(app);
 
-export {app, db, storage, analytics};
+export {app, db, storage };

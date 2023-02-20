@@ -19,10 +19,8 @@ const Home: NextPage = () => {
             {/* Feed */}
             <Feed />
 
-            
             {/* Modal */}
             <Modal />
-
         </div>
     );
 };
