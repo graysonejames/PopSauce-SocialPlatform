@@ -78,7 +78,7 @@ function Header() {
                                 onClick={signOut}
                                 className=" h-10 w-10 rounded-full cursor-pointer"
                                 src={session.user.image}
-                                alt="profilepic"
+                                alt="hearticon"
                             />
                         </>
                     ) : (
