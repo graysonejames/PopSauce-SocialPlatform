@@ -1,5 +1,6 @@
 import Stories from "./Stories";
 import Posts from "./Posts";
+import Following from "./Following";
 import SideProfile from "./SideProfile";
 import Suggestions from "./Suggestions";
 
@@ -27,10 +28,7 @@ function Feed() {
             }`}
         >
             <section className="col-span-2">
-                {/*Stories */}
                 <Stories />
-                {/*Posts */}
-                <Posts />
                 <Posts />
             </section>
 
@@ -39,6 +37,14 @@ function Feed() {
                     <div className="fixed">
                         <SideProfile />
                         <Suggestions />
+                    </div>
+                </section>
+            )}
+
+            {session && (
+                <section className="xl:inline-grid md:col-span-1">
+                    <div className="fixed">
+                        <Following />
                     </div>
                 </section>
             )}

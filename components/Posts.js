@@ -20,7 +20,7 @@ function Posts() {
     console.log(posts);
 
     return (
-        <>
+        <div>
             {/* look into map key */}
             {posts.map((post) => (
                 <Post
@@ -32,7 +32,7 @@ function Posts() {
                     caption={post.data().caption}
                 />
             ))}
-        </>
+        </div>
     );
 }
 

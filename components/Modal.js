@@ -39,7 +39,7 @@ function Modal() {
             async (snapshot) => {
                 const downloadURL = await getDownloadURL(imageRef);
 
-                await updateDoc(doc(db, 'posts', docRef.id), {
+                await updateDoc(doc(db, "posts", docRef.id), {
                     image: downloadURL,
                 });
             }
@@ -76,7 +76,7 @@ function Modal() {
                         leaveFrom="opacity-100"
                         leaveTo="opacity-0"
                     >
-                        <Dialog.Overlay className="fixed inset-0 bg-gray-500 bg-opacity-75 tansition-opacity" />
+                        <Dialog.Overlay className="fixed inset-0 bg-gray-500 bg-opacity-75 transition-opacity" />
                     </Transition.Child>
 
                     <span
@@ -114,7 +114,7 @@ function Modal() {
                                             filePickerRef.current.click()
                                         }
                                         className="mx-autoflex items-center justify-center
-                                    h-12 w-12 rounded-full bg-red-100 cursor-pointer"
+                                        h-12 w-12 rounded-full bg-red-100 cursor-pointer"
                                     >
                                         <CameraIcon
                                             className="h-6 w-6 text-red-600"
